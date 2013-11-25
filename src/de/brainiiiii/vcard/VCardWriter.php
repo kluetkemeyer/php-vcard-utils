@@ -92,7 +92,6 @@ class VCardWriter implements VCardWriterInterface
 	 */
 	const ENCODING = 'UTF-8';
 	
-	
 	/**
 	 * The output stream.
 	 *
@@ -139,8 +138,7 @@ class VCardWriter implements VCardWriterInterface
 			fputs($this->stream, $line . self::FOLDINGBREAK);
 		}
 		fputs($this->stream, $str . self::LINEBREAK);
-	}
-	
+	}	
 	
 	protected function _printContentLine($name, $value, $group=null, array $params=array())
 	{

@@ -86,5 +86,4 @@ class TestVCardWriter extends VCardWriter
 	{
 		return $this->_printContentLine($name, $value, $group, $params);
 	}
-	
 }
